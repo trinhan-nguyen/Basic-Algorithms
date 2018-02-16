@@ -1,0 +1,17 @@
+Constraints:
+The number of elements should be greater than zero
+Your set can only be integers that are less than 2 billions
+
+Example:
+This program will generate all subsets
+Please enter the number of elements:
+n = 3
+Now enter your elements: 5 6 7
+{  }
+{ 7 }
+{ 6 }
+{ 6, 7 }
+{ 5 }
+{ 5, 7 }
+{ 5, 6 }
+{ 5, 6, 7 }

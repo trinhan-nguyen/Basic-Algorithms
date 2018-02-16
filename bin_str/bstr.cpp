@@ -28,6 +28,13 @@ void generate(int cur, int len, bool *a) {
 int main() {
 	int n = 0;
 	bool a[maxn] = {0};
+	cout << "This program will generate all binary strings with length n.\n";
+	cout << "Please enter the length:\n";
+	cout << "n = ";
 	cin >> n;
+	if (n <= 0) {
+		cout << "Length should be greater than zero\n";
+		return 0;
+	}
 	generate(0, n, a);
 }

@@ -1,6 +1,12 @@
 Generate all binary strings with length n
-Example: 
+
+Example:  
+Input:
+This program will generate all binary strings with length n
+Please enter the length:
 n = 3
+
+Output:
 000
 001
 010
