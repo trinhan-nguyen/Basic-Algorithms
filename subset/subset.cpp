@@ -11,7 +11,7 @@ int find_last(int len, bool *a) {
 	return -1;
 }
 
-void print_string(int len, bool *a, int *elem) {
+void print_string(int len, bool *a, const int *elem) {
 	cout << "{ ";
 	int last_elem = find_last(len, a);
 	for (int i = 0; i < len; ++i) {
@@ -23,7 +23,7 @@ void print_string(int len, bool *a, int *elem) {
 	cout << " }\n";
 }
 
-void generate(int cur, int len, bool *a, int *elem) {
+void generate(int cur, int len, bool *a, const int *elem) {
 	if (cur == len) {
 		print_string(len, a, elem);		
 		return;
