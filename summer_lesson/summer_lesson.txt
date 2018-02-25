@@ -1,0 +1,25 @@
+Among all students planning to enroll to summer school at a university, each student wants to take exactly one out of all the available classes. To help the university in planning, your task is to find out how many students are taking each class.
+
+Complete the function howManyStudents which takes in an integer denoting the number of available classes, and an integer array denoting index of each class as input. The function must return an integer array where each element in the array represents the number of students that want to take each class.
+
+Sample Input 0:
+4 3
+2 2 0 2
+
+Sample Output 0:
+1 0 3
+
+Explanation 0:
+There are n = 4 students and m = 3 classes. We have c = [2,2,0,2], which means that:
+Student 0 wants to take class 2.
+Student 1 wants to take class 2.
+Student 2 wants to take class 0.
+Student 3 wants to take class 2.
+
+This means that:
+
+1 student wants to take class 0.
+0 students want to take class 1.
+3 students want to take class 2.
+
+Hence, we must print the array s = [1,0,3].

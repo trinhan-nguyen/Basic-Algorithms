@@ -1,0 +1,42 @@
+You are in charge of storing some of the inventory in a company. There are different types of packages. The total number of packages and the number of packages of each type is known to you. Also, each package is cube-shaped, with edge length given.
+
+Packages can only be stored in cylindrical containers which have a circular opening of given radius. Each container can hold a particular number of packages. We may assume that each container is tall enough that it can accommodate the total height of all the packages.
+
+As part of company policy, you must ensure the following holds:
+
+Each package can only be kept on top of another package.
+The package must not touch the sides of the cylinder, even at a single point. The packages may touch boundaries with each other or with the base of the cylinder.
+You have to choose which packages go into which containers. Discard packages that can't be stored.
+
+What is the maximum number of packages that can be put in the containers?
+
+Complete the function maximumPackages which takes in four arrays
+
+S, denoting the edge-lengths of each package type,
+K, denoting the number of copies of each package type,
+R, denoting the radius of the opening of each container, and
+C, denoting the number of packages each container can contain,
+and returns a single integer denoting the answer.
+
+Sample Input 0:
+2 2
+1 2
+1 1
+1 2
+1 1
+
+Sample Output 0:
+2
+
+Explanation 0:
+
+The edge length of the 1st package = 1. There is 1 such package. 
+The edge length of the 2nd package = 2. There is 1 such package.
+
+The radius of 1st cylinder = 1. 
+The radius of 2nd cylinder = 2.
+
+The 1st package can be put inside 1st as well as 2nd cylinder. 
+The 2nd package can only be put inside the 2nd cylinder.
+
+Since both cylinders can contain 1 package each, we can put 1st package in the 1st cylinder, and the 2nd package in the 2nd cylinder.
