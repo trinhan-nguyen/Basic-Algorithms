@@ -1,0 +1,8 @@
+Given a size of an array and the array itself (contains of only integers). Quicksort produces the new sorted array in non-decreasing order using quicksort algorithm.
+
+Sample input:
+5
+3 5 3 7 2 
+
+Sample output:
+2 3 3 5 7 
