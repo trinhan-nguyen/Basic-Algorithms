@@ -7,7 +7,7 @@ using namespace std;
 void swap(int &a, int &b) {
 	int tmp = a;
 	a = b;
-	b= tmp;
+	b = tmp;
 }
 
 void quicksort(vector<int> &a, int l, int r) {
