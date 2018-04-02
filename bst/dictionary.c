@@ -1,18 +1,8 @@
-////////////////////////////////////////////////////////////////////////////// 
-// I received help from the following sources:
-
-// None
-
-// Name: NHAN TRI NGUYEN  
-// login ID: NT5NGUYE
-/////////////////////////////////////////////////////////////////////////////
-
 #include <stdlib.h>
 #include <assert.h>
 #include "dictionary.h"
 #include <string.h>
 
-/////// DO NOT MODIFY DATA STRUCTURES OR PRINT CONSTANTS
 
 struct bstnode {
   void *item;                // key

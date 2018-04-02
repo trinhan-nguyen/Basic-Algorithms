@@ -1,5 +1,3 @@
-// SEASHELL_READONLY
-
 // This is a Dictionary ADT that can store *ANY* kind of data
 // with both keys and values as void pointers (void *)
 
