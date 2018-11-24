@@ -1,21 +1,19 @@
 #include <iostream>
-#include <algorithm>
 
-using namespace std;
-
-int n;
-long long fibo[50];
-
-void init(void) {
-	fibo[0] = 0;
-	fibo[1] = 1;
-	for (int i = 2; i < 36; ++i) 
-		fibo[i] = fibo[i - 1] + fibo[i - 2];
+int calculate(int n) {
+	int first = 0;
+	int second = 1;
+    int fiboNumber = 1;
+	for (int i = 1; i < n; ++i) {
+		fiboNumber = first + second;
+        first = second;
+        second = fiboNumber;
+    }
+    return fiboNumber;
 } 
 
 int main(void) {
-	cin >> n;
-	init();
-	cout << fibo[n];
+    int n = 20;
+    std::cout << calculate(n) << std::endl;
 	return 0;
 }
