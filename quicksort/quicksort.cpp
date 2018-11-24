@@ -1,14 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <stdlib.h>
+#include <fstream>
 
 using namespace std;
-
-void swap(int &a, int &b) {
-	int tmp = a;
-	a = b;
-	b = tmp;
-}
 
 void quicksort(vector<int> &a, int l, int r) {
 	if (l >= r) return;
@@ -26,17 +21,25 @@ void quicksort(vector<int> &a, int l, int r) {
 	quicksort(a, i, r);
 }
 
+void printToFile(const vector<int> &a) {
+    ofstream out("sampleOutput.txt");
+	for (int i = 0; i < a.size(); ++i) {
+		out << a[i] << " ";
+    }
+}
+
 int main() {
-	int n = 0;
+    ifstream inp("sampleInput.txt");
+    int size;
+    inp >> size;
 	vector<int> a;
-	cin >> n;
-	for (int i = 0; i < n; ++i) {
-		int tmp = 0;
-		cin >> tmp;
-		a.push_back(tmp);
+	for (int i = 0; i < size; ++i) {
+		int elem = 0;
+		inp >> elem;
+		a.push_back(elem);
 	}
-	quicksort(a, 0, n - 1);
-	for (int i = 0; i < n; ++i) 
-		cout << a[i] << " ";
-	return 0;
+
+	quicksort(a, 0, a.size() - 1);
+
+    printToFile(a);
 }
