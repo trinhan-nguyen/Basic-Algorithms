@@ -1,0 +1,11 @@
+A Codeforces problem
+
+Chouti was doing a competitive programming competition. However, after having all the problems accepted, he got bored and decided to invent some small games.
+
+He came up with the following game. The player has a positive integer 𝑛. Initially the value of 𝑛 equals to 𝑣 and the player is able to do the following operation as many times as the player want (possibly zero): choose a positive integer 𝑥 that 𝑥 < 𝑛 and 𝑥 is not a divisor of 𝑛, then subtract 𝑥 from 𝑛. The goal of the player is to minimize the value of 𝑛 in the end.
+
+Sample input: 8
+Sample output: 1
+
+Note
+In the first example, the player can choose 𝑥 = 3 in the first turn, then 𝑛 becomes 5. He can then choose 𝑥 = 4 in the second turn to get 𝑛 = 1 as the result. There are other ways to get this minimum. However, for example, he cannot choose 𝑥 = 2 in the first turn because 2 is a divisor of 8.
